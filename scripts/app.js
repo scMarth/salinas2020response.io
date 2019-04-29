@@ -8,9 +8,10 @@ require([
    "esri/symbols/SimpleMarkerSymbol",
    "esri/widgets/LayerList",
    "esri/tasks/Locator",
+   "esri/Graphic",
    "esri/request",
    "dojo/domReady!"
-   ], function(MapView, Map, FeatureLayer, Point, Legend, SimpleRenderer, SimpleMarkerSymbol, LayerList, Locator, esriRequest) {
+   ], function(MapView, Map, FeatureLayer, Point, Legend, SimpleRenderer, SimpleMarkerSymbol, LayerList, Locator, Graphic, esriRequest) {
       var legend;
 
       // Layers
@@ -211,18 +212,26 @@ require([
       }
 
       /**************************************************
-      * Add a point to the layer
+      * Add a point to the layer using applyEdits
       **************************************************/
       function addPointToLayer(layer, pointX, pointY, address){
-         layer.source.add({
-            geometry: new Point({
-               x: pointX,
-               y: pointY
-            }),
+         point = new Point({
+            x: pointX,
+            y: pointY
+         });
+
+         editFeature = new Graphic({
+            geometry: point,
             attributes: {
                address: address
             }
          });
+
+         edits = {
+            addFeatures: [editFeature]
+         };
+
+         layer.applyEdits(edits);
       }
 
       /**************************************************
