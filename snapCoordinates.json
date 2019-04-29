@@ -1,0 +1,30 @@
+[
+    {
+        "name": "John Doe",
+        "address": "127 Main St, Salinas, CA 93901",
+        "phone": "(831) - 444-4444",
+        "email": "johndoe@gmail.com",
+        "type": "red"
+    },
+    {
+        "name": "Crash Bandicoot",
+        "address": "1032 Pacific Ave, Salinas, CA 93905",
+        "phone": "(831) - 444-4444",
+        "email": "crashbandicoot@gmail.com",
+        "type": "blue"
+    },
+    {
+        "name": "Coco Bandicoot",
+        "address": "1036 Pacific Ave, Salinas, CA 93905",
+        "phone": "(831) - 444-4444",
+        "email": "cocobandicoot@gmail.com",
+        "type": "blue"
+    },
+    {
+        "name": "Natalie Doe",
+        "address": "4 Julia Ave, Salinas, CA 93906",
+        "phone": "(831) - 444-4444",
+        "email": "nataliedoe@gmail.com",
+        "type": "green"
+    }
+]
