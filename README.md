@@ -9,6 +9,6 @@ GitHub Pages Link: https://scmarth.github.io/salinas2020response.io/index.html
 * Two fingers down to zoom in
 * Double-tap + hold to pan
 
-To-Do:
+**To-Do**
 
 * Make legend style responsive
