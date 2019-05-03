@@ -1,0 +1,18 @@
+/* Reduce the size of the legend for small screens */
+@media only screen and (max-device-width: 600px){
+   .esri-legend__layer-table {
+      margin-bottom: 0 !important;
+   }
+
+   .esri-layer-list-panel__content--legend .esri-legend__service {
+      padding: 0 !important;
+   }
+
+   .esri-layer-list-panel {
+      margin: 0 15px !important;
+   }
+
+   .esri-ui-corner .esri-component.esri-widget--panel {
+      width: auto;
+   }
+}
