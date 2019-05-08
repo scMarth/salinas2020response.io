@@ -11,5 +11,5 @@ GitHub Pages Link: https://scmarth.github.io/salinas2020response.io/index.html
 
 **To-Do**
 
-* Make legend style responsive
+* Make legend style responsive - hard-coded legend?
 * Bootstrap?
